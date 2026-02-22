@@ -1,0 +1,19 @@
+baseURL = "https://YuroKanada.github.io/my-portfolio/"
+languageCode = "ja-jp"
+title = "金田悠路のあれこれ"
+theme = "PaperMod"
+hasCJKLanguage = true
+timeZone = "Asia/Tokyo"
+
+[author]
+name = "金田悠路"
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+
+[params.author]
+name = "金田悠路"
