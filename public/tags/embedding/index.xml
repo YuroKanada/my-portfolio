@@ -9,7 +9,7 @@
     <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/my-portfolio/tags/embedding/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DEIM2025_Disentangled_Representation</title>
+      <title>DEIM2025_Disentangled_Representation_paper</title>
       <link>http://localhost:1313/my-portfolio/publications/deim2025_paper/deim2025_disentangled_representation/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
       <guid>http://localhost:1313/my-portfolio/publications/deim2025_paper/deim2025_disentangled_representation/</guid>
@@ -18,6 +18,24 @@
 発表ID：7E-01&lt;br&gt;
 &lt;a href=&#34;https://pub.confit.atlas.jp/ja/event/deim2025/presentation/7E-01&#34;&gt;公式ページ&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;本研究では、文書埋め込み（embedding）において各次元が独立して意味を持つ &lt;strong&gt;Disentangled Representation&lt;/strong&gt; を獲得可能なエンコーダの設計を行った。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DEIM2025_Disentangled_Representation_poster</title>
+      <link>http://localhost:1313/my-portfolio/publications/deim2025_presentation/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/publications/deim2025_presentation/</guid>
+      <description>&lt;h2 id=&#34;レビューデータからの各次元が意味を持つ-disentangled-な映画ベクトル表現の獲得&#34;&gt;レビューデータからの各次元が意味を持つ Disentangled な映画ベクトル表現の獲得&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;第17回 データ工学と情報マネジメントに関するフォーラム（DEIM 2025）&lt;/strong&gt;&lt;br&gt;
+発表ID：7E-01&lt;br&gt;
+&lt;a href=&#34;https://pub.confit.atlas.jp/ja/event/deim2025/presentation/7E-01&#34;&gt;公式ページ&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;発表ポスター&#34;&gt;発表ポスター&lt;/h2&gt;
+&lt;iframe
+  src=&#34;./DEIM2025_poster.pdf&#34;
+  width=&#34;100%&#34;
+  height=&#34;900&#34;
+  style=&#34;border: 1px solid #ddd; border-radius: 8px;&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;./DEIM2025_poster.pdf&#34;&gt;PDFを別タブで開く&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
