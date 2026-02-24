@@ -5,8 +5,8 @@ theme = "PaperMod"
 hasCJKLanguage = true
 timeZone = "Asia/Tokyo"
 
-[author]
-name = "金田悠路"
+#[author]
+#name = "金田悠路"
 
 [params]
 defaultTheme = "auto"
@@ -14,6 +14,7 @@ ShowReadingTime = false
 ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
+author = "金田悠路"
 
 # PaperMod ホーム表示（ポートフォリオ向け）
 [params.profileMode]
@@ -40,9 +41,6 @@ url = "research/"
 [[params.profileMode.buttons]]
 name = "Posts"
 url = "posts/"
-
-[params.author]
-name = "金田悠路"
 
 # 上部メニュー（全導線）
 [[menu.main]]

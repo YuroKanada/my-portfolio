@@ -32,10 +32,27 @@
     <loc>http://localhost:1313/my-portfolio/research/</loc>
     <lastmod>2026-02-25T00:21:52+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-portfolio/about/</loc>
-  </url><url>
     <loc>http://localhost:1313/my-portfolio/categories/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/publications/deim2025_paper/deim2025_disentangled_representation/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/tags/disentangled-representation/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/tags/embedding/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/categories/publications/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/my-portfolio/tags/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/tags/workshop/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/about/</loc>
   </url>
 </urlset>

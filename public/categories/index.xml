@@ -6,6 +6,14 @@
     <description>Recent content in Categories on 金田悠路のあれこれ</description>
     <generator>Hugo -- 0.156.0</generator>
     <language>ja-jp</language>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/my-portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/my-portfolio/categories/publications/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/categories/publications/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
