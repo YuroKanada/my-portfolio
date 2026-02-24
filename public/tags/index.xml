@@ -6,6 +6,28 @@
     <description>Recent content in Tags on 金田悠路のあれこれ</description>
     <generator>Hugo -- 0.156.0</generator>
     <language>ja-jp</language>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/my-portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disentangled-Representation</title>
+      <link>http://localhost:1313/my-portfolio/tags/disentangled-representation/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/tags/disentangled-representation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Embedding</title>
+      <link>http://localhost:1313/my-portfolio/tags/embedding/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/tags/embedding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workshop</title>
+      <link>http://localhost:1313/my-portfolio/tags/workshop/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/tags/workshop/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

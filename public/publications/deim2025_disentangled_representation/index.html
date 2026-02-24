@@ -5,11 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Projects | 金田悠路のあれこれ</title>
-<meta name="keywords" content="">
-<meta name="description" content="Projects - 金田悠路のあれこれ">
-<meta name="author" content="金田悠路">
-<link rel="canonical" href="http://localhost:1313/my-portfolio/projects/">
+<title>DEIM2025_Disentangled_Representation | 金田悠路のあれこれ</title>
+<meta name="keywords" content="workshop, disentangled-representation, embedding">
+<meta name="description" content="レビューデータからの各次元が意味を持つ Disentangled な映画ベクトル表現の獲得
+第17回 データ工学と情報マネジメントに関するフォーラム（DEIM 2025）
+発表ID：7E-01
+公式ページ
+本研究では、文書埋め込み（embedding）において各次元が独立して意味を持つ Disentangled Representation を獲得可能なエンコーダの設計を行った。">
+<meta name="author" content="map[name:金田悠路]">
+<link rel="canonical" href="http://localhost:1313/my-portfolio/publications/deim2025_disentangled_representation/">
 <link crossorigin="anonymous" href="/my-portfolio/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/my-portfolio/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/my-portfolio/favicon-16x16.png">
@@ -18,8 +22,7 @@
 <link rel="mask-icon" href="http://localhost:1313/my-portfolio/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/my-portfolio/projects/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/my-portfolio/projects/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/my-portfolio/publications/deim2025_disentangled_representation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,7 +76,7 @@
 
 </script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -109,7 +112,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/my-portfolio/projects/" title="Projects">
-                    <span class="active">Projects</span>
+                    <span>Projects</span>
                 </a>
             </li>
             <li>
@@ -140,29 +143,38 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/my-portfolio/">Home</a></div>
-  <h1>
-    Projects
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Triplet_dataset
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/my-portfolio/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/my-portfolio/publications/">Publications</a></div>
+    <h1 class="post-title entry-hint-parent">
+      DEIM2025_Disentangled_Representation
+    </h1>
+    <div class="post-meta"><span title='2025-03-01 00:00:00 +0900 JST'>March 1, 2025</span>&nbsp;·&nbsp;<span>map[name:金田悠路]</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="レビューデータからの各次元が意味を持つ-disentangled-な映画ベクトル表現の獲得">レビューデータからの各次元が意味を持つ Disentangled な映画ベクトル表現の獲得<a hidden class="anchor" aria-hidden="true" href="#レビューデータからの各次元が意味を持つ-disentangled-な映画ベクトル表現の獲得">#</a></h2>
+<p><strong>第17回 データ工学と情報マネジメントに関するフォーラム（DEIM 2025）</strong><br>
+発表ID：7E-01<br>
+<a href="https://pub.confit.atlas.jp/ja/event/deim2025/presentation/7E-01">公式ページ</a></p>
+<p>本研究では、文書埋め込み（embedding）において各次元が独立して意味を持つ <strong>Disentangled Representation</strong> を獲得可能なエンコーダの設計を行った。</p>
+<p>近年、機械学習において embedding は広く用いられているが、得られるベクトルの各次元は一般に解釈不能である。そのため、人間による意味的理解や、意味に基づく高度なベクトル演算が困難であるという課題がある。</p>
+<p>本研究では、文書をベクトル化する際に各次元が独立した意味的要素を保持するよう学習を制御することで、解釈可能な文書表現の獲得を目指した。</p>
+<p>評価実験では映画レビューデータを用い、複数レビューから集約した映画ベクトルに対して定量評価および被験者評価を実施し、次元ごとの意味的一貫性と解釈可能性を検証した。</p>
+
+
   </div>
-  <footer class="entry-footer"><span title='2026-02-25 00:41:59 +0900 JST'>February 25, 2026</span>&nbsp;·&nbsp;<span>金田悠路</span></footer>
-  <a class="entry-link" aria-label="post link to Triplet_dataset" href="http://localhost:1313/my-portfolio/projects/triplet_dataset/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/my-portfolio/tags/workshop/">Workshop</a></li>
+      <li><a href="http://localhost:1313/my-portfolio/tags/disentangled-representation/">Disentangled-Representation</a></li>
+      <li><a href="http://localhost:1313/my-portfolio/tags/embedding/">Embedding</a></li>
+    </ul>
+
+  </footer>
 </article>
     </main>
     

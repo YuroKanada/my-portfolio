@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Publications on 金田悠路のあれこれ</title>
-    <link>http://localhost:1313/my-portfolio/publications/</link>
-    <description>Recent content in Publications on 金田悠路のあれこれ</description>
+    <title>Disentangled-Representation on 金田悠路のあれこれ</title>
+    <link>http://localhost:1313/my-portfolio/tags/disentangled-representation/</link>
+    <description>Recent content in Disentangled-Representation on 金田悠路のあれこれ</description>
     <generator>Hugo -- 0.156.0</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/my-portfolio/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-portfolio/tags/disentangled-representation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DEIM2025_Disentangled_Representation</title>
       <link>http://localhost:1313/my-portfolio/publications/deim2025_paper/deim2025_disentangled_representation/</link>
