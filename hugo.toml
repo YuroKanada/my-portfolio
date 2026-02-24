@@ -15,5 +15,74 @@ ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 
+# PaperMod ホーム表示（ポートフォリオ向け）
+[params.profileMode]
+enabled = true
+title = "金田悠路のあれこれ"
+subtitle = "Research / Projects / Publications"
+imageUrl = ""       # 使うなら例: "/images/profile.jpg"
+imageTitle = "profile"
+imageWidth = 140
+imageHeight = 140
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "about/"
+
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "projects/"
+
+[[params.profileMode.buttons]]
+name = "Research"
+url = "research/"
+
+[[params.profileMode.buttons]]
+name = "Posts"
+url = "posts/"
+
 [params.author]
 name = "金田悠路"
+
+# 上部メニュー（全導線）
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+identifier = "research"
+name = "Research"
+url = "/research/"
+weight = 30
+
+[[menu.main]]
+identifier = "experience"
+name = "Experience"
+url = "/experience/"
+weight = 40
+
+[[menu.main]]
+identifier = "awards"
+name = "Awards"
+url = "/awards/"
+weight = 50
+
+[[menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
+weight = 60
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 70
