@@ -11,9 +11,6 @@
     <loc>http://localhost:1313/my-portfolio/research/disentangled-representation/</loc>
     <lastmod>2026-02-25T00:42:50+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-portfolio/projects/</loc>
-    <lastmod>2026-02-25T00:41:59+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/my-portfolio/projects/triplet_dataset/</loc>
     <lastmod>2026-02-25T00:41:59+09:00</lastmod>
   </url><url>
@@ -27,6 +24,9 @@
     <lastmod>2026-02-25T00:21:53+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/my-portfolio/experience/</loc>
+    <lastmod>2026-02-25T00:21:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/projects/</loc>
     <lastmod>2026-02-25T00:21:52+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/my-portfolio/research/</loc>

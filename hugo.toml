@@ -1,14 +1,12 @@
 baseURL = "https://YuroKanada.github.io/my-portfolio/"
 languageCode = "ja-jp"
-title = "Your Portfolio"
+title = "金田悠路のあれこれ"
 theme = "PaperMod"
 hasCJKLanguage = true
 timeZone = "Asia/Tokyo"
 
 [author]
 name = "金田悠路"
-
-[params.]
 
 [params]
 defaultTheme = "auto"
@@ -20,31 +18,31 @@ ShowBreadCrumbs = true
 # PaperMod ホーム表示（ポートフォリオ向け）
 [params.profileMode]
 enabled = true
-title = "Your Name"
+title = "金田悠路のあれこれ"
 subtitle = "Research / Projects / Publications"
 imageUrl = ""       # 使うなら例: "/images/profile.jpg"
 imageTitle = "profile"
 imageWidth = 140
 imageHeight = 140
 
-[params.profileMode.buttons]
+[[params.profileMode.buttons]]
 name = "About"
-url = "/about/"
+url = "about/"
 
 [[params.profileMode.buttons]]
 name = "Projects"
-url = "/projects/"
+url = "projects/"
 
 [[params.profileMode.buttons]]
 name = "Research"
-url = "/research/"
+url = "research/"
 
 [[params.profileMode.buttons]]
 name = "Posts"
-url = "/posts/"
+url = "posts/"
 
 [params.author]
-name = "Your Name"
+name = "金田悠路"
 
 # 上部メニュー（全導線）
 [[menu.main]]
