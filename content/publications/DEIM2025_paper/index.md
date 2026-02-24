@@ -1,6 +1,6 @@
 +++
 date = '2025-03-01'
-draft = false
+draft = true
 title = 'DEIM2025_Disentangled_Representation_paper'
 tags = ['workshop', 'disentangled-representation', 'embedding']
 categories = ['publications']

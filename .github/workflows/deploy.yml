@@ -28,8 +28,9 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - - name: Build
+          run: hugo --minify --baseURL "https://YuroKanada.github.io/my-portfolio/"
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
