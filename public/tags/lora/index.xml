@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LoRA on 金田悠路のあれこれ</title>
+    <link>http://localhost:1313/my-portfolio/tags/lora/</link>
+    <description>Recent content in LoRA on 金田悠路のあれこれ</description>
+    <generator>Hugo -- 0.156.0</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/my-portfolio/tags/lora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBWS2025_LoRA_Embedding_Presentation</title>
+      <link>http://localhost:1313/my-portfolio/publications/dbws2025_presentation/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/my-portfolio/publications/dbws2025_presentation/</guid>
+      <description>&lt;h2 id=&#34;レビューデータからの各次元が意味を持つ-disentangled-な映画ベクトル表現の獲得&#34;&gt;レビューデータからの各次元が意味を持つ Disentangled な映画ベクトル表現の獲得&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;第17回 データ工学と情報マネジメントに関するフォーラム（DEIM 2025）&lt;/strong&gt;&lt;br&gt;
+発表ID：7E-01&lt;br&gt;
+&lt;a href=&#34;https://pub.confit.atlas.jp/ja/event/deim2025/presentation/7E-01&#34;&gt;公式ページ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本研究では、文書埋め込み（embedding）において各次元が独立して意味を持つ &lt;strong&gt;Disentangled Representation&lt;/strong&gt; を獲得可能なエンコーダの設計を行った。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

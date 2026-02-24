@@ -38,10 +38,16 @@
     <loc>http://localhost:1313/my-portfolio/publications/deim2025_paper/deim2025_disentangled_representation/</loc>
     <lastmod>2025-03-01T00:00:00+09:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/my-portfolio/publications/deim2025_presentation/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/my-portfolio/tags/disentangled-representation/</loc>
     <lastmod>2025-03-01T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/my-portfolio/tags/embedding/</loc>
+    <lastmod>2025-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-portfolio/tags/poster/</loc>
     <lastmod>2025-03-01T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/my-portfolio/categories/publications/</loc>
