@@ -8,7 +8,7 @@ lastmod = 2025-09-16T09:00:00+09:00
 
 # コンテンツ分類（一覧・表示制御用）
 categories = ["publications"]
-tags = ["LoRA", "embedding"]
+tags = ["LoRA", "Model Retrieval", "embedding"]
 pub_type = "paper"
 
 # 表示用メタデータ（公開制御とは分離）
