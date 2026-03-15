@@ -1,0 +1,27 @@
+{{- $pages := where site.RegularPages "Section" "publications" -}}
+{{- $pages = where $pages "Draft" "!=" true -}}
+{{- $pages = first 3 ($pages.ByDate.Reverse) -}}
+
+<section class="home-section home-section--publications" aria-label="Featured publications">
+  <div class="home-section__header">
+    <p class="home-section__lead">最新情報</p>
+  </div>
+
+  <div class="publication-stack">
+    {{- range $pages }}
+    <article class="publication-card">
+      <p class="publication-card__meta">{{ .Date.Format "2006.01.02" }}</p>
+      <h3 class="publication-card__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+    </article>
+    {{- end }}
+  </div>
+
+  <div class="home-section__footer">
+    <a class="home-section__more" href="{{ "publications/" | absURL }}">
+      <span>詳しくはこちら</span>
+      <span aria-hidden="true" class="home-section__arrow">→</span>
+    </a>
+  </div>
+</section>

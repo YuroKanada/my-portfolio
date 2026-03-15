@@ -1,0 +1,108 @@
+.home-section {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 45%),
+    linear-gradient(180deg, rgba(180, 210, 255, 0.08), rgba(255, 255, 255, 0.02));
+}
+
+.home-section--publications {
+  border-color: rgba(80, 120, 200, 0.25);
+  box-shadow: 0 20px 50px rgba(30, 40, 80, 0.08);
+}
+
+.home-section__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-section__lead {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--secondary);
+}
+
+.home-section__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.home-section__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.home-section__more:hover {
+  transform: translateX(2px);
+  border-color: rgba(80, 120, 200, 0.45);
+  background: rgba(80, 120, 200, 0.08);
+}
+
+.home-section__arrow {
+  font-size: 1rem;
+}
+
+.publication-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-card {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  border-left: 4px solid rgba(80, 120, 200, 0.5);
+  border-top: 1px solid rgba(80, 120, 200, 0.12);
+  border-right: 1px solid rgba(80, 120, 200, 0.12);
+  border-bottom: 1px solid rgba(80, 120, 200, 0.12);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.publication-card__meta {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+}
+
+.publication-card__title {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.publication-card__title a {
+  text-decoration: none;
+}
+
+.publication-card__title a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .home-section {
+    padding: 1.1rem;
+    border-radius: 20px;
+  }
+
+  .home-section__header {
+    margin-bottom: 1rem;
+  }
+
+  .home-section__more {
+    justify-content: space-between;
+  }
+}
