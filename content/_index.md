@@ -2,26 +2,32 @@
 title: "Home"
 ---
 
-## 研究・成果
-LoRAモデルの内部パラメータを用いた検索・表現学習の研究を行っています。
+## ① 研究テーマ
+LoRA モデルの内部パラメータに着目した表現学習や、検索・推薦につながる埋め込み表現の研究に取り組んでいます。
 
-→ [Research](/research/)
-→ [Projects](/projects/)
-
----
-
-## 経歴
-静岡大学大学院（莊司研究室）
-
-→ [Experience](/experience/)
+[Research](/research/)  
+[Projects](/projects/)
 
 ---
 
-## 受賞・発表
-→ [Awards](/awards/)
-→ [Publications](/publications/)
+## ② 経歴
+大学院での研究活動を軸に、発表・実装・資料作成まで一貫して取り組んできた内容をまとめています。
+
+[About](/about/)
 
 ---
 
-## 活動ログ
-→ [Blog](/posts/)
+## ③ 論文・発表歴
+{{< featured-publications >}}
+
+---
+
+## ④ 受賞歴
+{{< featured-awards >}}
+
+---
+
+## ⑤ 活動ログ
+更新情報や制作メモ、日々の活動はブログ形式で整理しています。
+
+[Blog](/posts/)

@@ -18,7 +18,7 @@ author = "金田悠路"
 
 # PaperMod ホーム表示（ポートフォリオ向け）
 [params.profileMode]
-enabled = true
+enabled = false
 title = "金田悠路のあれこれ"
 subtitle = "Research / Projects / Publications"
 imageUrl = ""       # 使うなら例: "/images/profile.jpg"

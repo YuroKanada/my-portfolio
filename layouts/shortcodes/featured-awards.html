@@ -1,0 +1,16 @@
+{{- $pages := where site.RegularPages "Section" "awards" -}}
+{{- $pages = where $pages "Draft" "!=" true -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+
+<section class="home-section home-section--awards" aria-label="Featured awards">
+  <div class="award-stack">
+    {{- range $pages }}
+    <article class="award-card">
+      <span class="award-card__label">{{ .Params.award_label | default "学会表彰" }}</span>
+      <h3 class="award-card__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+    </article>
+    {{- end }}
+  </div>
+</section>
