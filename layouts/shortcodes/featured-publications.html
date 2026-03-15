@@ -10,7 +10,10 @@
   <div class="publication-stack">
     {{- range $pages }}
     <article class="publication-card">
-      <p class="publication-card__meta">{{ .Date.Format "2006.01.02" }}</p>
+      <p class="publication-card__meta">
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+        <span class="publication-card__label">{{ .Params.pub_type | default "publication" }}</span>
+      </p>
       <h3 class="publication-card__title">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </h3>

@@ -1,0 +1,37 @@
+{{- define "main" }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+<section class="publication-stack" aria-label="Publications list">
+  {{- range $pages }}
+  <article class="publication-card">
+    <p class="publication-card__meta">
+      <span>{{ .Date.Format "2006.01.02" }}</span>
+      <span class="publication-card__label">{{ .Params.pub_type | default "publication" }}</span>
+    </p>
+    <h2 class="publication-card__title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    {{- with .Summary }}
+    <p class="publication-card__summary">{{ . | plainify | htmlUnescape }}</p>
+    {{- end }}
+  </article>
+  {{- end }}
+</section>
+{{- end }}

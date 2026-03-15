@@ -1,5 +1,5 @@
 +++
-title = "[paper]:WebDB夏のワークショップ2025"
+title = "WebDB夏のワークショップ2025"
 draft = false
 
 # Hugoの公開管理用（未来日で404回避）
