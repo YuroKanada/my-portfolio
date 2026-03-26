@@ -29,7 +29,7 @@ poster_pdf = ""
 code_url = "https://github.com/YuroKanada/Learning-Disentangled-Document-Representations-Based-on-a-Classical-Shallow-Neural-Encoder"
 +++
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/6495f6755ff4402dbfcf29db991a516d?slide=1" title="レビューデータからの各次元が意味を持つ Disentangled な映画のベクトル表現の獲得" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/acec684c7fcd43499982791912c2324a?slide=1" title="Learning Disentangled Document Representations Based on a Classical Shallow Neural Encoder" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
 ## 概要
 The 27th International Conference on Information Integration and Web Intelligenceにて、
