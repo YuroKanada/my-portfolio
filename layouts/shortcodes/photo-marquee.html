@@ -1,0 +1,53 @@
+{{- $pages := where site.RegularPages "Draft" "!=" true -}}
+{{- $pages = where $pages "Section" "in" (slice "awards" "publications" "posts" "projects" "research") -}}
+{{- $pagesWithImages := slice -}}
+
+{{- range $pages -}}
+  {{- $images := .Resources.ByType "image" -}}
+  {{- if gt (len $images) 0 -}}
+    {{- $pagesWithImages = $pagesWithImages | append (dict "page" . "image" (index $images 0)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if gt (len $pagesWithImages) 0 -}}
+  {{- $items := shuffle $pagesWithImages -}}
+  {{- $splitIndex := int (math.Ceil (div (float (len $items)) 2)) -}}
+  {{- $rowA := first $splitIndex $items -}}
+  {{- $rowB := after $splitIndex $items -}}
+  {{- if eq (len $rowB) 0 -}}
+    {{- $rowB = $rowA -}}
+  {{- end -}}
+
+<section class="photo-marquee" aria-label="Article photos">
+  <div class="photo-marquee__intro">
+    <!-- <p class="photo-marquee__eyebrow">Snapshots</p> -->
+    <h2 class="photo-marquee__title">金田悠路という人間のあれこれ</h2>
+    <p class="photo-marquee__text">研究活動や発表、受賞の様子をまとめています。</p>
+  </div>
+
+  <div class="photo-marquee__rows">
+    {{- range $rowIndex, $row := slice $rowA $rowB }}
+    <div class="photo-marquee__row {{ if eq $rowIndex 1 }}photo-marquee__row--reverse{{ end }}">
+      <div class="photo-marquee__track">
+        {{- range seq 1 2 }}
+          {{- range $cardIndex, $item := $row }}
+          {{- $page := index $item "page" -}}
+          {{- $image := index $item "image" -}}
+          {{- $rotation := index (slice "-3deg" "2deg" "-1deg" "3deg" "1deg") (mod $cardIndex 5) -}}
+          <a class="photo-marquee__card" href="{{ $page.RelPermalink }}" style="--photo-rotate: {{ $rotation }};" aria-label="{{ $page.Title }}">
+            <figure class="photo-marquee__figure">
+              <img src="{{ $image.RelPermalink }}" alt="{{ $page.Title }}" loading="lazy">
+              <figcaption class="photo-marquee__caption">
+                <span class="photo-marquee__caption-title">{{ $page.Title }}</span>
+                <span class="photo-marquee__caption-meta">{{ $page.Date.Format "2006.01.02" }} / {{ $page.Section }}</span>
+              </figcaption>
+            </figure>
+          </a>
+          {{- end }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end -}}
