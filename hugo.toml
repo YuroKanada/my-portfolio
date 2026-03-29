@@ -1,4 +1,5 @@
 baseURL = "https://yurokanada.github.io/my-portfolio/"
+cleanDestinationDir = true
 languageCode = "ja-jp"
 title = "金田悠路のあれこれ"
 theme = "PaperMod"
