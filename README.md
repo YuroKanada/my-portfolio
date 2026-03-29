@@ -3,7 +3,7 @@
 研究・発表実績をまとめた、Hugo製のポートフォリオサイトです。  
 GitHub Pages で公開しています。
 
-- 公開URL: https://YuroKanada.github.io/my-portfolio/
+- 公開URL: https://yuroKanada.github.io/my-portfolio/
 - 使用テーマ: `PaperMod`
 - 主な掲載内容: `About / Projects / Research / Awards / Publications / Posts`
 
