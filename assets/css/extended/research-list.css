@@ -33,7 +33,7 @@
 
 .research-card__title {
   margin: 0 0 0.9rem;
-  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
   line-height: 1.45;
 }
 
