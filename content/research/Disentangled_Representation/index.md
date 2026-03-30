@@ -2,9 +2,13 @@
 date = '2025-12-08T00:42:50+09:00'
 draft = false
 title = '文書を「各次元が独立して意味を持つベクトル」に変換し解釈可能なベクトル化獲得'
+summary = 'iiWAS2025「Learning Disentangled Document Representations Based on a Classical Shallow Neural Encoder」'
+[cover]
+image = "thumb.png"
+relative = true
 +++
-
-![DR化](thumb.png "解釈可能なベクトル化")
+<!-- 
+![DR化](thumb.png "解釈可能なベクトル化") -->
 
 ## 文書の意味を解きほぐして、
 ## 意味ごとに整理されたベクトルを作ろう！

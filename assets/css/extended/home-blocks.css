@@ -64,6 +64,81 @@
   font-size: 1rem;
 }
 
+.home-work {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.home-work__card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 248, 250, 0.92));
+}
+
+.home-work__thumb {
+  display: block;
+  width: 112px;
+}
+
+.home-work__thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.home-work__body {
+  min-width: 0;
+}
+
+.home-work__eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-work__title {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.home-work__title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.home-work__title a:hover {
+  text-decoration: underline;
+}
+
+.home-work__footer {
+  margin-top: 0.8rem;
+}
+
+.home-work__more {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
 .publication-stack {
   display: grid;
   gap: 1rem;
@@ -305,6 +380,20 @@
   .home-section {
     padding: 1.1rem;
     border-radius: 20px;
+  }
+
+  .home-work {
+    grid-template-columns: 1fr;
+  }
+
+  .home-work__card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 0.85rem;
+    padding: 0.9rem;
+  }
+
+  .home-work__thumb {
+    width: 88px;
   }
 
   .home-section__header {

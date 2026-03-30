@@ -2,6 +2,9 @@
 date = '2026-02-10T00:42:50+09:00'
 draft = false
 title = '莊司研究室オープンソースデータセット'
+[cover]
+image = "OSS.png"
+relative = true
 +++
 
 ![OSD](OSS.png "Shoji Lab Open Dataset")

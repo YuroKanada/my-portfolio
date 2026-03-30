@@ -1,0 +1,47 @@
+{{- $sections := slice
+  (dict "key" "research" "title" "Research" "path" "research/")
+  (dict "key" "projects" "title" "Projects" "path" "projects/")
+-}}
+
+<section class="home-work" aria-label="Featured research and projects">
+  {{- range $sections }}
+    {{- $sectionKey := .key -}}
+    {{- $sectionPath := .path -}}
+    {{- $page := first 1 ((where (where site.RegularPages "Section" $sectionKey) "Draft" "!=" true).ByDate.Reverse) -}}
+    {{- with index $page 0 }}
+      {{- $thumb := "" -}}
+      {{- if .Params.cover.image }}
+        {{- if eq (.Params.cover.relative) true }}
+          {{- $thumb = (path.Join .RelPermalink .Params.cover.image) | relURL -}}
+        {{- else }}
+          {{- $thumb = (.Params.cover.image | absURL) -}}
+        {{- end }}
+      {{- end }}
+      {{- with .Resources.ByType "image" }}
+        {{- if not $thumb }}
+          {{- with index . 0 }}
+            {{- $thumb = .RelPermalink -}}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+  <article class="home-work__card">
+    {{- if $thumb }}
+    <a class="home-work__thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+      <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
+    </a>
+    {{- end }}
+    <div class="home-work__body">
+      <p class="home-work__eyebrow">{{ $sectionKey | title }}</p>
+      <h3 class="home-work__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+      <div class="home-work__footer">
+        <a class="home-work__more" href="{{ $sectionPath | absURL }}">
+          <span>一覧を見る</span>
+        </a>
+      </div>
+    </div>
+  </article>
+    {{- end }}
+  {{- end }}
+</section>

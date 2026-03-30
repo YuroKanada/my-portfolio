@@ -59,7 +59,25 @@
 
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  {{- $listThumb := "" -}}
+  {{- if not $isHidden -}}
+    {{- if and (.Params.cover.image) (eq (.Params.cover.relative) true) -}}
+      {{- $listThumb = (path.Join .RelPermalink .Params.cover.image) | relURL -}}
+    {{- end -}}
+    {{- with (.Resources.ByType "image") -}}
+      {{- with and (not $listThumb) (index . 0) -}}
+        {{- $listThumb = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and (not $listThumb) (.Params.cover.image) -}}
+      {{- $listThumb = (.Params.cover.image | absURL) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $listThumb }}
+  <figure class="entry-cover entry-cover--compact">
+    <img loading="lazy" src="{{ $listThumb }}" alt="{{ .Title }}">
+  </figure>
+  {{- end }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
       {{- .Title }}
