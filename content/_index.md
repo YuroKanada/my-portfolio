@@ -4,17 +4,19 @@ title: "Home"
 {{< photo-marquee >}}
 
 ## ① 研究テーマ
-LoRA モデルの内部パラメータに着目した表現学習や、検索・推薦につながる埋め込み表現の研究に取り組んでいます。
+学部生では、解釈可能な文書の埋め込み表現の獲得について、  
+現在は、LoRAモデルの内部パラメータに着目した表現学習や、  
+検索・推薦につながる埋め込み表現の研究に取り組んでいます。
 
-[Research](/research/)  
-[Projects](/projects/)
+<a href="{{< relref path="/research/_index.md" >}}">Research</a>  
+<a href="{{< relref path="/projects/_index.md" >}}">Projects</a>
 
 ---
 
 ## ② 経歴
 大学院での研究活動を軸に、発表・実装・資料作成まで一貫して取り組んできた内容をまとめています。
 
-[About](/about/)
+<a href="{{< relref path="/about.md" >}}">About</a>
 
 ---
 
