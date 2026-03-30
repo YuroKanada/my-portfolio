@@ -1,0 +1,23 @@
+.about-research-block {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(120, 132, 158, 0.16);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(247, 248, 250, 0.96), rgba(242, 244, 247, 0.96));
+  box-shadow: 0 10px 24px rgba(40, 48, 72, 0.05);
+}
+
+.about-research-block > :first-child {
+  margin-top: 0;
+}
+
+.about-research-block > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .about-research-block {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+}
