@@ -1,0 +1,53 @@
+{{- define "main" }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}
+    {{ .Content }}
+  {{- end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+<section class="award-list" aria-label="Awards list">
+  {{- range $pages }}
+    {{- $thumb := "" -}}
+    {{- with .Resources.ByType "image" }}
+      {{- with index . 0 }}
+        {{- $thumb = .RelPermalink -}}
+      {{- end }}
+    {{- end }}
+    {{- if and (not $thumb) (.Params.cover.image) }}
+      {{- if eq (.Params.cover.relative) true }}
+        {{- $thumb = (path.Join .RelPermalink .Params.cover.image) | relURL -}}
+      {{- else }}
+        {{- $thumb = (.Params.cover.image | absURL) -}}
+      {{- end }}
+    {{- end }}
+  <article class="award-list__card">
+    {{- if $thumb }}
+    <a class="award-list__thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+      <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
+    </a>
+    {{- end }}
+    <div class="award-list__body">
+      <p class="award-list__meta">
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+        {{- with .Params.award_label }}
+        <span class="award-list__label">{{ . }}</span>
+        {{- end }}
+      </p>
+      <h2 class="award-list__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+    </div>
+  </article>
+  {{- end }}
+</section>
+{{- end }}
