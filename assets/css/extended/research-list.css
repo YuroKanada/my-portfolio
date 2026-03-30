@@ -1,0 +1,70 @@
+.research-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.research-card {
+  display: grid;
+  grid-template-columns: 156px minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(115, 134, 180, 0.14);
+  background: linear-gradient(180deg, rgba(247, 247, 249, 0.96), rgba(242, 243, 246, 0.96));
+}
+
+.research-card__thumb {
+  display: block;
+  width: 156px;
+}
+
+.research-card__thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.research-card__body {
+  min-width: 0;
+}
+
+.research-card__title {
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.45;
+}
+
+.research-card__title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.research-card__title a:hover {
+  text-decoration: underline;
+}
+
+.research-card__summary {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 720px) {
+  .research-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.1rem;
+  }
+
+  .research-card__thumb {
+    width: min(168px, 100%);
+  }
+
+  .research-card__title {
+    font-size: 1.15rem;
+  }
+}

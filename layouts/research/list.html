@@ -1,0 +1,53 @@
+{{- define "main" }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}
+    {{ .Content }}
+  {{- end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+<section class="research-stack" aria-label="Research list">
+  {{- range $pages }}
+    {{- $thumb := "" -}}
+    {{- if .Params.cover.image }}
+      {{- if eq (.Params.cover.relative) true }}
+        {{- $thumb = (path.Join .RelPermalink .Params.cover.image) | relURL -}}
+      {{- else }}
+        {{- $thumb = (.Params.cover.image | absURL) -}}
+      {{- end }}
+    {{- end }}
+    {{- with .Resources.ByType "image" }}
+      {{- if not $thumb }}
+        {{- with index . 0 }}
+          {{- $thumb = .RelPermalink -}}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- $blurb := .Params.summary | default (.Summary | plainify | htmlUnescape) -}}
+  <article class="research-card">
+    {{- if $thumb }}
+    <a class="research-card__thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+      <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
+    </a>
+    {{- end }}
+    <div class="research-card__body">
+      <h2 class="research-card__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{- with $blurb }}
+      <p class="research-card__summary">{{ . }}</p>
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</section>
+{{- end }}

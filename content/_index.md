@@ -8,8 +8,7 @@ title: "Home"
 現在は、LoRAモデルの内部パラメータに着目した表現学習や、  
 検索・推薦につながる埋め込み表現の研究に取り組んでいます。
 
-<a href="{{< relref path="/research/_index.md" >}}">Research</a>  
-<a href="{{< relref path="/projects/_index.md" >}}">Projects</a>
+{{< featured-work >}}
 
 ---
 

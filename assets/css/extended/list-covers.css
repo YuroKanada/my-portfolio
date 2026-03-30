@@ -1,0 +1,18 @@
+.entry-cover--compact {
+  margin-bottom: 0.9rem;
+}
+
+.entry-cover--compact img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+  .entry-cover--compact img {
+    max-height: 180px;
+  }
+}
