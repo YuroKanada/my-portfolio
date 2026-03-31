@@ -18,6 +18,6 @@ award_label = "学会表彰"
 ## 関連リンク
 
 - [静岡大学情報学部ニュース](https://www.inf.shizuoka.ac.jp/news/4338/)
-- [LINEヤフーの研究開発ニュース](https://research.lycorp.co.jp/jp/news/31)
+- [LINEヤフーの研究開発ニュース](https://research.lycorp.co.jp/jp/news/312)
 - [DEIM2025表彰情報](https://pub.confit.atlas.jp/ja/event/deim2025/content/awards)
 - [莊司研究室ニュース](https://shoji-lab.github.io/%E7%99%BA%E8%A1%A8/2025/05/21/DEIM2025Award2.html)
