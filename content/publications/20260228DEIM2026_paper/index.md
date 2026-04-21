@@ -26,7 +26,7 @@ topic = "LoRA Embedding"
 # 成果物リンク
 paper_url = "https://pub-files.atlas.jp/fs/public/deim2026/ver_26/abstract/ja/3F-01.pdf"
 poster_pdf = ""
-code_url = "https://github.com/YuroKanada/Learning-Embedding-Representations-of-LoRA-Models-from-Adapter-Weights"
+code_url = "https://github.com/YuroKanada/Retrieval_of_LoRA_Models_based_on_Layer-Wise_Weight_Embedding_without_Metadata"
 +++
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5e491be7c74b4fb7a79eb0ab3d3d78eb?slide=1" title="画風変換LoRAの内部パラメータによる変換特徴を考慮したモデルの埋め込み表現の獲得" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
