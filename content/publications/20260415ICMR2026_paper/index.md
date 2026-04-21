@@ -4,7 +4,7 @@ draft = false
 
 # Hugoの公開管理用（未来日で404回避）
 date = 2026-04-15T09:00:00+09:00
-lastmod = 2025-04-15T09:00:00+09:00
+lastmod = 2026-04-15T09:00:00+09:00
 
 # コンテンツ分類（一覧・表示制御用）
 categories = ["publications"]
@@ -15,7 +15,7 @@ pub_type = "paper"
 event_name = "16th ACM International Conference on Multimedia Retrieval（ICMR2026）"
 event_date = 2026-06-17
 venue = "KIT Royal Tropical Institute"
-<!-- presentation_id = "Track2 iiWAS-1" -->
+presentation_id = "Track2 iiWAS-1"
 event_url = "https://icmr2026.org/index.html"
 
 # 研究情報
@@ -24,21 +24,22 @@ my_role = "first_author"
 topic = "LoRA Embedding"
 
 # 成果物リンク
-<!-- paper_url = "https://dl.acm.org/doi/10.1007/978-3-032-11976-6_5"
-poster_pdf = "" -->
+paper_url = "https://dl.acm.org/doi/10.1007/978-3-032-11976-6_5"
+poster_pdf = ""
 code_url = "https://github.com/YuroKanada/Retrieval_of_LoRA_Models_based_on_Layer-Wise_Weight_Embedding_without_Metadata"
 +++
 
 <!-- <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/acec684c7fcd43499982791912c2324a?slide=1" title="Learning Disentangled Document Representations Based on a Classical Shallow Neural Encoder" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe> -->
 
 ## 概要
+2026年6月にオランダ アムステルダムで開催される  
 16th ACM International Conference on Multimedia Retrieval（ICMR2026）にて、
 
 **「Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata」**
 
 というタイトルで論文が採択されました。
 
-ICMRはマルチメディア検索のトップカンファレンスであり、その中でも、「Brave New Ideas Track」  
+ICMRはマルチメディア検索のトップカンファレンスであり、その中でも、「Brave New Ideas Track」
 という新規性の高い新しい検索技術の提案を評価するトラックでの採択でした。
 
 念願のトップカンファレンスに主著者として、論文が採択されたこと嬉しく思います。
@@ -66,7 +67,7 @@ ICMRはマルチメディア検索のトップカンファレンスであり、�
 - イベント名: {{< param event_name >}}
 - 会場: {{< param venue >}}
 - 日付: {{< param event_date >}}
-- 発表ID: {{< param presentation_id >}}
+<!-- - 発表ID: {{< param presentation_id >}} -->
 - 役割: {{< param my_role >}}
 - [公式ページ]({{< param event_url >}})
 
