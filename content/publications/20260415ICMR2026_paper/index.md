@@ -24,12 +24,12 @@ my_role = "first_author"
 topic = "LoRA Embedding"
 
 # 成果物リンク
-paper_url = "https://dl.acm.org/doi/10.1007/978-3-032-11976-6_5"
+paper_url = "https://dl.acm.org/doi/10.5555/3805622.3822155"
 poster_pdf = ""
 code_url = "https://github.com/YuroKanada/Retrieval_of_LoRA_Models_based_on_Layer-Wise_Weight_Embedding_without_Metadata"
 +++
 
-<!-- <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/acec684c7fcd43499982791912c2324a?slide=1" title="Learning Disentangled Document Representations Based on a Classical Shallow Neural Encoder" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe> -->
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e84df584bbaa4ab7b8ba39ba1df5db58" title=" Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata" allowfullscreen="true" allow="web-share" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
 ## 概要
 2026年6月にオランダ アムステルダムで開催される  
@@ -42,24 +42,20 @@ code_url = "https://github.com/YuroKanada/Retrieval_of_LoRA_Models_based_on_Laye
 ICMRはマルチメディア検索のトップカンファレンスであり、その中でも、「Brave New Ideas Track」
 という新規性の高い新しい検索技術の提案を評価するトラックでの採択でした。
 
-念願のトップカンファレンスに主著者として、論文が採択されたこと嬉しく思います。
+近年、画像生成AIで利用されるLoRAモデルは急速に増加していますが、類似したLoRAを探すためには、メタデータや生成画像が必要であり、それらが失われた場合には検索が困難になるという課題があります。  
 
-今後論文の公開や、発表後に詳細の情報を追加する予定です。
+そこで本研究では、LoRAの内部重みのみから、その変換特徴を表現する埋め込みベクトルを学習する手法を提案しました。  
+レイヤごとの重みをベクトル化し、Transformerを用いた距離学習によって、見た目の変換特徴が似ているLoRA同士が近くなる埋め込み空間を構築しています。  
 
-<!-- というタイトルで論文を発表しました。 -->
+評価実験では、人手による類似度判断との一致性やLoRA検索性能を評価し、提案手法は人間の感覚に近い類似度を学習するとともに、高精度かつ安定したLoRA検索を実現できることを確認しました。  
 
-<!-- 現在、どの機械学習においてもembeddingが当たり前になっています。  
-入力データを機械学習モデルが処理できる形に変換するこの仮定に注目すると、embeddingから得られるベクトルの各次元が意味を持っていないという現状があります。  
-この現状は、人間がベクトルを解釈不可能、より意味的に踏み込んだベクトル演算ができないという二つの問題を抱えていると考えました。
+本研究は、画像そのものではなく、それを生成するAIモデルを検索するという新しいマルチメディア検索の方向性を提案しています。
 
-そこで本研究では、文書をベクトル化した際にその各次元が独立して意味を持つようにする、Disentangled Representationの獲得が可能なエンコーダの作成を行いました。
+念願であったトップカンファレンスに主著者として論文が採択され、大変嬉しく思います。 
+そして、初の海外発表も経験することができ、研究発表や海外の文化について貴重な機会を与えていただいた莊司先生にはとても感謝しています。　　
 
-文書ベクトルの各次元が独立して意味を持つようになれば、文書ベクトルを観点ごとに比較可能になり、人間のあいまいな要望に対する検索も可能になるのではないかと考えています。
-
-評価実験で映画のレビューデータを使用し、一つの映画につく複数のレビューから得られるベクトルを映画ベクトルとして定量評価、被験者評価を行いました。
-
-人生初の国際会議でしたが、発表、質疑含めすべて英語で堂々と発表できました。 -->
-
+本研究は、LoRAモデルの内部重みを対象とした検索という、新しい研究領域への第一歩だと考えています。  
+今後はキーワード検索や推薦、著作権保護支援などへ応用を広げながら、「LoRA Weight Embedding」に基づくモデル検索という研究分野を発展・確立していきたいと考えています。
 
 ## 発表・投稿情報
 
@@ -76,5 +72,5 @@ ICMRはマルチメディア検索のトップカンファレンスであり、�
 ## 成果物
 
 - [研究関連の実装コード]({{< param code_url >}})
-<!-- - [論文PDF]({{< param paper_url >}}) -->
+- [論文PDF]({{< param paper_url >}})
 <!-- - ポスター: 該当なし（`poster_pdf`） -->
