@@ -24,7 +24,7 @@ my_role = "first_author"
 topic = "LoRA Embedding"
 
 # 成果物リンク
-paper_url = "https://dl.acm.org/doi/10.5555/3805622.3822155"
+paper_url = "https://doi.org/10.1145/3805622.3810428"
 poster_pdf = ""
 code_url = "https://github.com/YuroKanada/Retrieval_of_LoRA_Models_based_on_Layer-Wise_Weight_Embedding_without_Metadata"
 +++
