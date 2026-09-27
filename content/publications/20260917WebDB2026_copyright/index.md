@@ -1,5 +1,5 @@
 +++
-title = "画風変換LoRAの内部パラメータによる著作権保護支援のための学習画像由来LoRA検索"
+title = "WebDB夏のワークショップ2026➁"
 draft = false
 
 # Hugoの公開管理用（未来日で404回避）
@@ -28,8 +28,6 @@ paper_url = ""
 slide_url = ""
 code_url = ""
 +++
-
-## 発表スライド
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/55ad5624302242b38495b3fb621612bf" title="2026_09_15_WebDB2026個人研究.pdf" allowfullscreen="true" allow="web-share" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 

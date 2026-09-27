@@ -1,10 +1,10 @@
 +++
-title = "相対的に固有な変換特徴の言語化による自然言語クエリからの画風変換LoRAモデル検索"
+title = "WebDB夏のワークショップ2026➀"
 draft = false
 
 # Hugoの公開管理用（未来日で404回避）
-date = 2026-09-17T09:00:00+09:00
-lastmod = 2026-09-25T09:00:00+09:00
+date = 2026-09-16T09:00:00+09:00
+lastmod = 2026-09-27T09:00:00+09:00
 
 # コンテンツ分類（一覧・表示制御用）
 categories = ["publications"]
@@ -28,8 +28,6 @@ paper_url = ""
 slide_url = ""
 code_url = ""
 +++
-
-## 発表スライド
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9be4782c759b437d9b8c40c74d3ebf4b" title="2026_09_15_WebDB_LY研究.pdf" allowfullscreen="true" allow="web-share" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 ## 概要
@@ -68,6 +66,9 @@ VLMで画像ごとの特徴を観測し、LLMで複数画像に共通する特�
 - [公式ページ]({{< param event_url >}})
 
 <!-- ## 成果物 -->
+## 関連リンク
+
+- [共同研究先での掲載](https://research.lycorp.co.jp/jp/publications/2768)
 
 ## 受賞
 本発表は、👑**学生奨励賞**を受賞しました。

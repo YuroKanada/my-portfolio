@@ -66,5 +66,9 @@ code_url = "https://github.com/YuroKanada/Learning-Disentangled-Document-Represe
 - [論文PDF]({{< param paper_url >}})
 <!-- - ポスター: 該当なし（`poster_pdf`） -->
 
+## 関連リンク
+
+- [共同研究先での掲載](https://research.lycorp.co.jp/jp/publications/2268)
+
 ## 受賞
 本発表は、👑**学生プレゼンテーション賞**を受賞しました。
