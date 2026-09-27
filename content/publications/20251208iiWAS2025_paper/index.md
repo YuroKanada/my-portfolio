@@ -68,3 +68,7 @@ The 27th International Conference on Information Integration and Web Intelligenc
 - [研究関連の実装コード]({{< param code_url >}})
 - [論文PDF]({{< param paper_url >}})
 <!-- - ポスター: 該当なし（`poster_pdf`） -->
+
+## 関連リンク
+
+- [共同研究先での掲載](https://research.lycorp.co.jp/jp/publications/2465)

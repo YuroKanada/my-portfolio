@@ -71,5 +71,9 @@ WebDB夏のワークショップ2025は、データベース分野の主要な�
 - [論文PDF]({{< param paper_url >}})
 
 
+## 関連リンク
+
+- [共同研究先での掲載](https://research.lycorp.co.jp/jp/publications/2376)
+
 ## 受賞
 本発表は、👑**学生奨励賞**を受賞しました。
