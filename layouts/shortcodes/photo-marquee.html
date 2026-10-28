@@ -18,23 +18,30 @@
     {{- $rowB = $rowA -}}
   {{- end -}}
 
-<section class="photo-marquee" aria-label="Article photos">
+<section class="photo-marquee" aria-label="記事と活動写真">
   <div class="photo-marquee__intro">
-    <!-- <p class="photo-marquee__eyebrow">Snapshots</p> -->
-    <h2 class="photo-marquee__title">金田悠路の<br>研究活動や発表、受賞の様子をまとめています。</br></h2>
-    <!-- <p class="photo-marquee__text">研究活動や発表、受賞の様子をまとめています。</p> -->
+    <h2 class="photo-marquee__title">金田悠路の<br>研究活動や発表、受賞の様子をまとめています。</h2>
+    <p class="photo-marquee__hint"><span aria-hidden="true">↔</span> ドラッグ・ホイール・スワイプで動かせます</p>
   </div>
 
-  <div class="photo-marquee__rows">
+  <div class="photo-marquee__rows" data-photo-marquee>
     {{- range $rowIndex, $row := slice $rowA $rowB }}
-    <div class="photo-marquee__row {{ if eq $rowIndex 1 }}photo-marquee__row--reverse{{ end }}">
+    <div
+      class="photo-marquee__row {{ if eq $rowIndex 1 }}photo-marquee__row--reverse{{ end }}"
+      data-marquee-row
+      data-direction="{{ if eq $rowIndex 1 }}-1{{ else }}1{{ end }}"
+      tabindex="0"
+      role="region"
+      aria-label="記事写真 {{ add $rowIndex 1 }}行目。左右キーでも操作できます"
+    >
       <div class="photo-marquee__track">
-        {{- range seq 1 2 }}
+        {{- range $copyIndex := seq 1 3 }}
+        <div class="photo-marquee__group"{{ if ne $copyIndex 2 }} aria-hidden="true"{{ end }}>
           {{- range $cardIndex, $item := $row }}
           {{- $page := index $item "page" -}}
           {{- $image := index $item "image" -}}
           {{- $rotation := index (slice "-3deg" "2deg" "-1deg" "3deg" "1deg") (mod $cardIndex 5) -}}
-          <a class="photo-marquee__card" href="{{ $page.RelPermalink }}" style="--photo-rotate: {{ $rotation }};" aria-label="{{ $page.Title }}">
+          <a class="photo-marquee__card" href="{{ $page.RelPermalink }}" style="--photo-rotate: {{ $rotation }};" aria-label="{{ $page.Title }}"{{ if ne $copyIndex 2 }} tabindex="-1"{{ end }}>
             <figure class="photo-marquee__figure">
               <img src="{{ $image.RelPermalink }}" alt="{{ $page.Title }}" loading="lazy">
               <figcaption class="photo-marquee__caption">
@@ -44,6 +51,7 @@
             </figure>
           </a>
           {{- end }}
+        </div>
         {{- end }}
       </div>
     </div>

@@ -10,6 +10,7 @@ lastmod = 2025-12-08T09:00:00+09:00
 categories = ["publications"]
 tags = ["disentangled-representation", "embedding"]
 pub_type = "paper"
+event_scope = "international"
 
 # 表示用メタデータ（公開制御とは分離）
 event_name = "The 27th International Conference on Information Integration and Web Intelligence（iiWAS 2025）"

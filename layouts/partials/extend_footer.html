@@ -1,0 +1,6 @@
+{{- if .IsHome }}
+  {{- with resources.Get "js/photo-marquee.js" }}
+    {{- $script := . | minify | fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{- end }}
+{{- end }}

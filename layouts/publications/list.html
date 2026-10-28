@@ -20,10 +20,14 @@
 {{- $pages := .RegularPages.ByDate.Reverse -}}
 <section class="publication-stack" aria-label="Publications list">
   {{- range $pages }}
-  <article class="publication-card">
+  {{- $isInternational := eq .Params.event_scope "international" }}
+  <article class="publication-card{{ if $isInternational }} publication-card--international{{ end }}">
     <p class="publication-card__meta">
       <span>{{ .Date.Format "2006.01.02" }}</span>
       <span class="publication-card__label">{{ .Params.pub_type | default "publication" }}</span>
+      {{- if $isInternational }}
+      <span class="publication-card__label publication-card__label--international">International</span>
+      {{- end }}
     </p>
     <h2 class="publication-card__title">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
