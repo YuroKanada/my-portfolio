@@ -10,6 +10,7 @@ lastmod = 2026-10-28T09:00:00+09:00
 categories = ["publications"]
 tags = ["Low-Rank Adaptation", "Model Retrieval", "Cross-Modal Retrieval", "Training Data Attribution"]
 pub_type = "paper"
+event_scope = "international"
 
 # 表示用メタデータ（公開制御とは分離）
 event_name = "33rd International Conference on Multimedia Modeling（MMM 2027）"

@@ -10,6 +10,7 @@ lastmod = 2026-04-15T09:00:00+09:00
 categories = ["publications"]
 tags = ["LoRA", "Model Retrieval", "embedding"]
 pub_type = "paper"
+event_scope = "international"
 
 # 表示用メタデータ（公開制御とは分離）
 event_name = "16th ACM International Conference on Multimedia Retrieval（ICMR2026）"
