@@ -268,10 +268,6 @@
 }
 
 .photo-marquee__intro {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
@@ -288,15 +284,6 @@
   margin: 0;
   font-size: clamp(1.5rem, 2vw, 2.1rem);
   line-height: 1.2;
-}
-
-.photo-marquee__hint {
-  flex: 0 0 auto;
-  margin: 0 0 0.2rem;
-  color: var(--secondary);
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
 }
 
 .photo-marquee__text {
@@ -411,15 +398,6 @@
   .photo-marquee__track,
   .photo-marquee__group {
     gap: 0.8rem;
-  }
-
-  .photo-marquee__intro {
-    display: block;
-  }
-
-  .photo-marquee__hint {
-    margin-top: 0.7rem;
-    white-space: normal;
   }
 
   .photo-marquee__card {
